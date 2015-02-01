@@ -1,0 +1,14 @@
+<%= @list.name %>
+<ul>
+<% @tasks.each do |task| %>
+<li>Current Task: <%= link_to task.title, task %>
+<br>
+
+Complete Status: <%= task.complete %> </li>
+<% end %>
+</ul>
+
+
+<%= render 'lists/form' %>
+<%= link_to 'Back', list_path %>
+

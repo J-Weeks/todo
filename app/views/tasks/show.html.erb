@@ -1,0 +1,17 @@
+Current Task: <%= @task.title %>
+<br>
+<br>
+Update current task below:
+<br>
+<br>
+<%= render 'tasks/form' %>
+
+<ul>
+<% @notes.each do |note| %>
+<li>Current Task Note: <%= note.comment %>
+</li>
+<% end %>
+</ul>
+<%= link_to 'New Task', new_list_task_path(params[:id]) %>
+<%= link_to 'Back', task_path %>
+
