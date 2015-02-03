@@ -1,7 +1,19 @@
 New Task
 <h1>New Task?</h1>
 
-<%= render 'tasks/form' %>
+<%= form_for(@task) do |f| %>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :complete %><br>
+    <%= f.text_field :complete %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
 
 
 <%= link_to 'Back', task_path %>

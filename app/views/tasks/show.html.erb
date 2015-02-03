@@ -4,7 +4,24 @@ Current Task: <%= @task.title %>
 Update current task below:
 <br>
 <br>
-<%= render 'tasks/form' %>
+
+
+<%= form_for(@task) do |f| %>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :complete %><br>
+    <%= f.text_field :complete %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+
 
 <ul>
 <% @notes.each do |note| %>
