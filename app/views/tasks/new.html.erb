@@ -1,7 +1,6 @@
-New Task
 <h1>New Task?</h1>
 
-<%= form_for(@task) do |f| %>
+<%= form_for :task do |f| %>
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
@@ -16,5 +15,5 @@ New Task
 <% end %>
 
 
-<%= link_to 'Back', task_path %>
+<%= link_to 'Back', :back %>
 

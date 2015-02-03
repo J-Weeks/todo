@@ -21,7 +21,7 @@ before_action :set_task, only: [:edit, :update, :destroy]
 
   def create
     @list = List.find(params[:list_id])
-    @task = @list.tasks.find(params[:id])
+    @task = @list.tasks.new(task_params)
     if @task.save
       redirect_to list_path(@list)
     else
