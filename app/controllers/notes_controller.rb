@@ -18,7 +18,7 @@ before_action :set_note, only: [:edit, :update, :destroy]
   end
 
   def create
-    @note = Note.create!(note_params)
+    @note = Note.new(note_params)
     if @note.save
       redirect_to @note
     else

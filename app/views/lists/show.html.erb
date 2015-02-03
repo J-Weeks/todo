@@ -1,8 +1,8 @@
-<%= @list.name %>
+<h1><%= @list.name %></h1>
 <ul>
 <% @tasks.each do |task| %>
-<li>Current Task: <%= link_to task.title, task %>
-<br>
+<h3><li>Current Task: <%= link_to task.title, task %>
+<br></h3>
 
 Complete Status: <%= task.complete %> </li>
 <% end %>

@@ -1,10 +1,8 @@
-Current Task: <%= @task.title %>
+<h3>Current Task: <%= @task.title %></h3>
 <br>
 <br>
-Update current task below:
+<p class="headtext">Update current task below:</p>
 <br>
-<br>
-
 
 <%= form_for(@task) do |f| %>
   <div class="field">
@@ -21,14 +19,15 @@ Update current task below:
 <% end %>
 
 
-
+<br>
+<br>
 
 <ul>
 <% @notes.each do |note| %>
-<li>Current Task Note: <%= note.comment %>
+<h3><li>Current Task Note: <%= note.comment %> </h3>
 </li>
 <% end %>
 </ul>
 <%= link_to 'New Task', new_list_task_path(params[:id]) %>
-<%= link_to 'Back', task_path %>
+<%= link_to 'Back', :back %>
 

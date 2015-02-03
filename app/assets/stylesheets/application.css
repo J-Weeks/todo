@@ -1,3 +1,46 @@
+body { padding-top: 20px;
+        text-align: center;
+      background-image: url(http://www.twitterevolutions.com/bgs/leaves.jpg)}
+
+
+
+.headtext { font-style: italic }
+
+h1 { font-family: cursive }
+
+h3 { font-family: cursive }
+
+.button {
+   border-top: 1px solid #8fe0a5;
+   background: #2e523f;
+   background: -webkit-gradient(linear, left top, left bottom, from(#a1edaf), to(#2e523f));
+   background: -webkit-linear-gradient(top, #a1edaf, #2e523f);
+   background: -moz-linear-gradient(top, #a1edaf, #2e523f);
+   background: -ms-linear-gradient(top, #a1edaf, #2e523f);
+   background: -o-linear-gradient(top, #a1edaf, #2e523f);
+   padding: 2px 4px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #4f024f;
+   font-size: 12px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #dbd8db;
+   background: #dbd8db;
+   color: #4a034a;
+   }
+.button:active {
+   border-top-color: #d6dee3;
+   background: #d6dee3;
+   }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
